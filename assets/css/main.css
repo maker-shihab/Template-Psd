@@ -1,0 +1,665 @@
+@font-face {
+    font-family: AvenirRoman;
+    src: url(../fonts/AvenirLTStd-Roman.woff2) format('woff2'), url(../fonts/AvenirLTStd-Roman.woff) format('woff');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap
+}
+
+@font-face {
+    font-family: AvenirMedium;
+    src: url(../fonts/AvenirMedium.woff) format('woff2'), url(../fonts/AvenirMedium.woff2) format('woff');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap
+}
+
+@font-face {
+    font-family: AvenirBlack;
+    src: url(../fonts/AvenirLTStd-Black.woff2) format('woff2'), url(../fonts/AvenirLTStd-Black.woff) format('woff');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap
+}
+
+@font-face {
+    font-family: MuseoSans500;
+    src: url(../fonts/MuseoSans-500.woff2) format('woff2'), url(../fonts/MuseoSans-500.woff) format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap
+}
+
+@font-face {
+    font-family: AvenirBook;
+    src: url(../fonts/AvenirLTStd-Book.woff2) format('woff2'), url(../fonts/AvenirLTStd-Book.woff) format('woff');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap
+}
+
+@font-face {
+    font-family: MuseoSans700;
+    src: url(../fonts/MuseoSans-700.woff2) format('woff2'), url(../fonts/MuseoSans-700.woff) format('woff');
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap
+}
+
+@font-face {
+    font-family: ProximaRegular;
+    src: url(../fonts/ProximaNova-Regular.woff2) format('woff2'), url(../fonts/ProximaNova-Regular.woff) format('woff');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap
+}
+
+@font-face {
+    font-family: ProximaBold;
+    src: url(../fonts/ProximaNova-Bold.woff2) format('woff2'), url(../fonts/ProximaNova-Bold.woff) format('woff');
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap
+}
+
+h1 {
+    font-family: AvenirBlack;
+    font-weight: 900;
+    font-size: 3.5rem;
+    color: #f7fdfe
+}
+
+h2 {
+    font-family: AvenirBlack;
+    font-weight: 900;
+    font-size: 3.2rem;
+    color: #f7fdfe
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    outline: 0
+}
+
+::after,
+::before {
+    -webkit-box-sizing: inherit;
+    box-sizing: inherit
+}
+
+html {
+    scroll-behavior: smooth;
+    font-size: 62.2%;
+    line-height: 1.3
+}
+
+body {
+    font-size: 1.5rem;
+    color: #f7fdfe;
+    font-family: AvenirMedium, sans-serif
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+    padding: 0
+}
+
+li,
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0
+}
+
+a {
+    text-decoration: none
+}
+
+.section-padding {
+    padding: 5rem 0
+}
+
+.w-100 {
+    height: 10rem;
+    width: 100%;
+    background: #38404a;
+    display: inline-block
+}
+
+.pd-top {
+    padding-top: 5rem
+}
+
+.pd-buttom {
+    padding-bottom: 5rem
+}
+
+::-moz-selection {
+    background: #b3d4fc;
+    font-weight: 700
+}
+
+::selection {
+    background: #b3d4fc;
+    text-shadow: none
+}
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0
+}
+
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+    vertical-align: middle
+}
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0
+}
+
+textarea {
+    resize: vertical
+}
+
+.hidden,
+[hidden] {
+    display: none !important
+}
+
+.sr-only {
+    border: 0;
+    clip: rect(0, 0, 0, 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    white-space: nowrap;
+    width: 1px
+}
+
+.sr-only.focusable:active,
+.sr-only.focusable:focus {
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    white-space: inherit;
+    width: auto
+}
+
+.invisible {
+    visibility: hidden
+}
+
+.clearfix::after,
+.clearfix::before {
+    content: " ";
+    display: table
+}
+
+.clearfix::after {
+    clear: both
+}
+
+@media print {
+
+    *,
+    ::after,
+    ::before {
+        background: #fff !important;
+        color: #000 !important;
+        -webkit-box-shadow: none !important;
+        box-shadow: none !important;
+        text-shadow: none !important
+    }
+
+    a,
+    a:visited {
+        text-decoration: none
+    }
+
+    a[href]::after {
+        content: " ("attr(href) ")"
+    }
+
+    abbr[title]::after {
+        content: " ("attr(title) ")"
+    }
+
+    a[href^="#"]::after,
+    a[href^="javascript:"]::after {
+        content: ""
+    }
+
+    pre {
+        white-space: pre-wrap !important
+    }
+
+    blockquote,
+    pre {
+        border: 1px solid #999;
+        page-break-inside: avoid
+    }
+
+    thead {
+        display: table-header-group
+    }
+
+    img,
+    tr {
+        page-break-inside: avoid
+    }
+
+    h2,
+    h3,
+    p {
+        orphans: 3;
+        widows: 3
+    }
+
+    h2,
+    h3 {
+        page-break-after: avoid
+    }
+}
+
+.navigation {
+    position: relative
+}
+
+.navigation .row {
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    padding: 2rem 0
+}
+
+.logo .logo-bars {
+    visibility: hidden
+}
+
+.logo-bars span {
+    height: 5px;
+    width: 25px;
+    background: #9999;
+    -webkit-transition: all .4s ease-in-out;
+    -o-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+    position: absolute;
+    top: 10px;
+    right: 0;
+    border-radius: 6px;
+    line-height: 5px
+}
+
+.logo-bars:hover span {
+    background: #0ebfdd
+}
+
+.logo-bars {
+    display: inline-block;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    row-gap: 3px;
+    position: relative;
+    height: 3rem;
+    width: 3rem;
+    cursor: pointer
+}
+
+.sticky-menu {
+    position: fixed;
+    width: 100%;
+    background: #e2e2e2;
+    z-index: 9999
+}
+
+.sticky-menu .navigation .row {
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    padding: 1rem 0
+}
+
+.logo {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center
+}
+
+.logo a {
+    color: #82868f;
+    -webkit-transition: .3s linear;
+    -o-transition: .3s linear;
+    transition: .3s linear;
+    font-size: 3.5rem;
+    font-family: AvenirBlack;
+    font-weight: 900
+}
+
+.logo a:hover {
+    color: #0ebfdd
+}
+
+.logo-bars span:nth-child(1) {
+    top: 3px
+}
+
+.logo-bars span:nth-child(2) {
+    top: 12px
+}
+
+.logo-bars span:nth-child(3) {
+    top: 21px
+}
+
+.logo-bars.open span:nth-child(1) {
+    -webkit-transform: rotate(135deg);
+    -ms-transform: rotate(135deg);
+    transform: rotate(135deg);
+    top: 12px
+}
+
+.logo-bars.open span:nth-child(2) {
+    opacity: 0;
+    -webkit-transform: translateX(-60px);
+    -ms-transform: translateX(-60px);
+    transform: translateX(-60px)
+}
+
+.logo-bars.open span:nth-child(3) {
+    -webkit-transform: rotate(-135deg);
+    -ms-transform: rotate(-135deg);
+    transform: rotate(-135deg);
+    top: 12px
+}
+
+.banner-area {
+    background: url(../img/body/banner.jpg) no-repeat scroll 0 0/cover;
+    height: 90vh
+}
+
+.menu,
+.menu ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: flex-end;
+    -ms-flex-pack: flex-end;
+    justify-content: flex-end;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center
+}
+
+.menu ul li a {
+    font-family: MuseoSans700;
+    font-weight: 700;
+    color: #82868f;
+    padding: 1rem 1.7rem;
+    text-transform: uppercase;
+    -webkit-transition: .3s linear;
+    -o-transition: .3s linear;
+    transition: .3s linear
+}
+
+.menu ul li a:hover {
+    color: #0ebfdd
+}
+
+.sing-up input[type=submit] {
+    color: #fff;
+    padding: 1rem 3rem;
+    border-radius: 2.5rem;
+    background: #0ebfdd;
+    border: 2px solid transparent;
+    outline: 0;
+    -webkit-transition: .3s linear;
+    -o-transition: .3s linear;
+    transition: .3s linear;
+    margin-left: 1rem
+}
+
+.sing-up input[type=submit]:hover {
+    color: #0ebfdd;
+    background: 0 0;
+    border-color: #0ebfdd
+}
+
+.banner-content {
+    text-align: center;
+    margin-top: 50vh
+}
+
+.banner-content h1 i {
+    font-size: 2rem
+}
+
+.about p,
+.banner-content p {
+    width: 60%;
+    margin: 0 auto;
+    margin-top: 2rem
+}
+
+.about {
+    text-align: center
+}
+
+.about h2 {
+    color: #0ebfdd
+}
+
+.about p {
+    color: #38404a
+}
+
+.team-area {
+    background: #0ebfdd
+}
+
+.team {
+    text-align: center
+}
+
+.slick-track {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center
+}
+
+.profole-img {
+    height: 10rem;
+    width: 10rem;
+    margin: 2rem auto
+}
+
+.slick-center .profole-img {
+    height: 15rem;
+    width: 15rem
+}
+
+.profole-img img {
+    height: 100%;
+    width: 100%;
+    -o-object-fit: cover;
+    object-fit: cover
+}
+
+.profile-text h3 {
+    font-family: AvenirBlack;
+    font-weight: 900
+}
+
+.profile-text P {
+    font-family: AvenirRoman;
+    font-weight: 400
+}
+
+.team-button a {
+    display: inline-block;
+    text-transform: uppercase;
+    color: #f7fdfe;
+    padding: 1rem 3rem;
+    border: 2px solid #f7fdfe;
+    border-radius: 3.5rem;
+    -webkit-transition: .3s linear;
+    -o-transition: .3s linear;
+    transition: .3s linear;
+    font-family: MuseoSans700;
+    font-weight: 700
+}
+
+.team-button a:hover {
+    background: #f7fdfe;
+    color: #0ebfdd
+}
+
+.footer-area {
+    background: #45494d
+}
+
+.footer-top {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    padding: 3rem 0 1rem 0
+}
+
+.footer-menu ul,
+.socail-icone ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center
+}
+
+.footer-menu ul li a {
+    color: #d7dee4;
+    -webkit-transition: .3s linear;
+    -o-transition: .3s linear;
+    transition: .3s linear;
+    display: inline-block;
+    font-family: MuseoSans500;
+    font-weight: 500;
+    text-transform: uppercase;
+    padding: 0 1rem
+}
+
+.footer-menu ul li a:hover,
+.footer-privacy ul li a:hover {
+    color: #0ebfdd
+}
+
+.socail-icone ul li {
+    margin: 0 .5rem
+}
+
+.socail-icone ul li a i {
+    color: #d7dee4;
+    display: inline-block;
+    font-size: 1.6rem;
+    padding: 1rem;
+    border: 2px solid #d7dee4;
+    border-radius: 50%;
+    -webkit-transition: .3s linear;
+    -o-transition: .3s linear;
+    transition: .3s linear
+}
+
+.socail-icone ul li a i:hover {
+    color: #0ebfdd;
+    border-color: #0ebfdd
+}
+
+.footer-privacy ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: end;
+    -ms-flex-pack: end;
+    justify-content: end;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    padding: 1rem 0;
+    margin-bottom: 2rem
+}
+
+.footer-privacy ul li a {
+    font-family: MuseoSans500;
+    font-weight: 500;
+    color: #d7dee4;
+    display: inline-block;
+    -webkit-transition: .3s linear;
+    -o-transition: .3s linear;
+    transition: .3s linear;
+    padding: 0 1.8rem
+}
+
+.footer-privacy ul li:nth-child(3) {
+    margin-right: 0
+}
+
+.footer-privacy ul li span {
+    width: 1px;
+    border-left: 2px solid #d7dee4
+}
+
+.map-area iframe {
+    width: 100%;
+    height: 40rem;
+    border: 0
+}

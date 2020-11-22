@@ -1,0 +1,82 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v7.0.29,
+* Autoprefixer: v9.7.6
+* Browsers: last 4 version
+*/
+
+@media (max-width: 767px) {
+    .menu ul {
+        display: none;
+        text-align: center;
+        position: absolute;
+        top: 92px;
+        left: 0;
+        background: rgb(241, 241, 241);
+        width: 100%;
+        border-radius: 0 0 10px 10px;
+    }
+
+    .sticky-menu .menu ul {
+        top: 72px;
+    }
+
+    .menu ul li {
+        width: 80%;
+        margin: 15px auto;
+    }
+
+    .menu ul .sing-up {
+        padding: 2rem 0;
+        border-top: 2px solid #ddd;
+        margin: 1rem auto;
+    }
+
+    .logo .logo-bars {
+        visibility: visible !important;
+    }
+
+    .about p,
+    .banner-content p {
+        width: 100%;
+        margin: 0 auto;
+        margin-top: 2rem;
+    }
+}
+
+@media (min-width: 767px) {
+    .menu ul {
+        display: -webkit-box !important;
+        display: -ms-flexbox !important;
+        display: flex !important;
+    }
+
+}
+
+@media (max-width: 575px) {
+    .footer-top {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        row-gap: 2rem;
+    }
+
+    .footer-privacy ul {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        row-gap: 2rem;
+    }
+
+    .footer-privacy ul li span {
+        display: none;
+    }
+
+    .banner-content {
+        text-align: center;
+        margin-top: 25vh;
+    }
+
+}
